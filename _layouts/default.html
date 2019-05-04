@@ -7,12 +7,31 @@
 　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 　　　　<title>{{ page.title }}</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 　　</head>
 
 　　<body>
 
-　　　　{{ content }}
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:bing.li.ecc@duke.edu">email</a></li>
+				</ul>
+			</footer>
 
 　　</body>
 
