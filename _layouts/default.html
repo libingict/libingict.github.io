@@ -19,24 +19,27 @@
 
 　　<body>
 			<div class="container">
-						<nav>
-	    		<ul class="nav nav-pills pull-right">
-	        		<li class="{{ page.cv }}"><a href="/" title = "CV">Home</a></li>
-		        	<li><a href="/about">About Me</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
+				<div class="header">
+		    		<ul class="nav nav-pills pull-right">
+		        		<li class="{{ page.cv }}"><a href="/" title = "CV">Home</a></li>
+			        	<li><a href="/about">About Me</a></li>
+		        		<li><a href="/cv">CV</a></li>
+		        		<!-- <li><a href="/blog">Blog</a></li> -->
+		    		</ul>
+		    		<h3 class="text-muted"><a href="/">Bing Li</a></h3>
+				</div><!-- /.contheaderainer -->
 			{{ content }}
-			
-
-				<footer>
-		    		<ul class="row">
+			<footer>
+				<div class="row">
+					<div class="col-sm-8">
+		    		<ul>
 		        		<li><a href="mailto:bing.li.ecc@duke.edu">email</a></li>
 					</ul>
-					<div class="row">
+					</div>
 					<div class="col-sm-8">
 						<p><small>&copy; bingli 2018</small></p>
 					</div>
+				</div>
 				</footer>
 			</div><!-- /.container -->
 　　</body>
