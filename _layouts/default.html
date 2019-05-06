@@ -7,10 +7,10 @@
 		<meta name="viewport" width="device-width, initial-scale=1.0">
 		<meta name="description" content="{{ page.description }}">
 		<meta name="author" content="Bing Li">
-		<link rel="icon" type="image/png" href="img/Duke.png">
 　　　　<title>{{ page.title }} | Bing Li </title>
 		<!-- link to main stylesheet -->
 		<!-- <link rel="stylesheet" type="text/css" href="/css/main.css">-->
+		<link rel="icon" type="image/png" href="img/Duke.png">
 		<link href="/css/bootstrap.css" rel="stylesheet">
 		<link href="/css/jumbotron-narrow.css" rel="stylesheet">
 		<link href="/css/style.css" rel="stylesheet">
@@ -29,7 +29,9 @@
 		    	</ul>
 		    	<h3 class="text-muted"><a href="/">Bing Li</a></h3>
 			</div><!--header -->
+
 			{{ content }}
+
 			<footer>
 				<div class="row">
 					<div class="col-sm-8">
@@ -37,7 +39,11 @@
 					</div>
 				</div>
 			</footer>
+
 		</div><!-- /.container -->
+		
+		{% include scripts.html %}
+
 　　</body>
 
 　　</html>
