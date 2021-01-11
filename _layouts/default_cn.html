@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+　　<html>
+
+　　<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" width="device-width, initial-scale=1.0">
+		<meta name="description" content="{{ page.description }}">
+		<meta name="author" content="Bing Li">
+　　　　<title>{{ page.title }} | 李冰 </title>
+		<!-- link to main stylesheet -->
+		<!-- <link rel="stylesheet" type="text/css" href="/css/main.css">-->
+		<link rel="icon" type="image/png" href="img/Duke.png">
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+
+		{% include analytics.html %}	
+　　</head>
+
+　　<body>
+		<div class="container">
+			<div class="header">
+		    	<ul class="nav nav-pills pull-right">
+		        		<li><a href="/" title = "Home">主页</a></li>
+			        	<li><a href="/about">其他</a></li>
+		        		<li><a href="/cv">简历</a></li>
+		        		<li><a href="index.html">English</a></li>
+		        		<li><a href="#">中文</a></li>
+		        		<!-- <li><a href="/blog">Blog</a></li> -->
+		    	</ul>
+		    	<h3 class="text-muted"><a href="/">Bing Li</a></h3>
+			</div><!--header -->
+
+			{{ content }}
+
+			<footer>
+				<div class="row">
+					<div class="col-sm-8">
+					<p><small>&copy; 李冰 2019; Last updated: 2021</small></p>
+					</div>
+				</div>
+			</footer>
+
+		</div><!-- /.container -->
+		
+		{% include scripts.html %}
+
+　　</body>
+
+　　</html>
