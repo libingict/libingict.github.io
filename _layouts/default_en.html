@@ -2,65 +2,80 @@
 
 　　<html>
 
-　　<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" width="device-width, initial-scale=1.0">
-		<meta name="description" content="{{ page.description }}">
-		<meta name="author" content="Bing Li">
-　　　　<title>{{ page.title }} | Bing Li' Homepage </title>
-		<!-- link to main stylesheet -->
-		 <link rel="stylesheet" type="text/css" href="/css/main.css">
-		<link rel="icon" type="image/png" href="img/Duke.png">
-		<link href="/css/bootstrap.css" rel="stylesheet">
-		<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-		<link href="/css/style.css" rel="stylesheet">
-		<style>table, th, td{
-			 border:1px solid black;
-			 #border-collapse: collapse;
-			}
-			th, td{
-			 padding: 5px;
-			}
-			th{
-			 text-align: left;
-     			}
-			img{
-			 width:100%;
-			}
-		</style>
-		{% include analytics.html %}	
-　　</head>
+　　
 
-　　<body>
-		<div class="container">
-			<div class="header">
-		    	<ul class="nav nav-pills pull-right">
-		          <li><a href="index_en.html" title = "Home">Home</a></li>
-<!--		          <li><a href="/teaching/index_cn.html">Course</a></li>-->
-<!--		          <li><a href="/teaching/seminar.html">Seminar</a></li>-->
-		          <li><a href="/cv/index_en.html">CV</a></li>
-		          <li><a href="/about/index_en.html">Misc</a></li>
-		          <li ><a href="index_en.html">English</a></li>
-		          <li ><a href="index_cn.html"> 中文</a></li>
-		        		<!-- <li><a href="/blog">Blog</a></li> -->
-		    	</ul>
-		    	<h3 class="text-muted"><a href="/">Bing Li</a></h3>
-			</div><!--header -->
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" width="device-width, initial-scale=1.0">
+	<meta name="description" content="{{ page.description }}">
+	<meta name="author" content="Bing Li">
+	　　　　<title>{{ page.title }} | Bing Li' Homepage </title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="icon" type="image/png" href="img/Duke.png">
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			#border-collapse: collapse;
+		}
 
-			{{ content }}
+		th,
+		td {
+			padding: 5px;
+		}
 
-			<footer>
-				<div class="row">
-					<div class="col-sm-8">
+		th {
+			text-align: left;
+		}
+
+		img {
+			width: 100%;
+		}
+	</style>
+	{% include analytics.html %}
+	　　
+</head>
+
+　　
+
+<body>
+	<div class="container">
+		<div class="header">
+			<ul class="nav nav-pills pull-right">
+				<li><a href="../index_en.html" title="Home">Home</a></li>
+				<!--		          <li><a href="/teaching/index_cn.html">Course</a></li>-->
+				<!--		          <li><a href="/teaching/seminar.html">Seminar</a></li>-->
+				<li><a href="/cv/index_en.html">CV</a></li>
+				<li><a href="/about/index_en.html">Misc</a></li>
+				<li><a href="index_en.html">English</a></li>
+				<li><a href="index_cn.html"> 中文</a></li>
+				<!-- <li><a href="/blog">Blog</a></li> -->
+			</ul>
+			<h3 class="text-muted"><a href="/">Bing Li</a></h3>
+		</div><!--header -->
+
+		{{ content }}
+
+		<footer>
+			<div class="row">
+				<div class="col-sm-8">
 					<p><small>&copy; BingLi 2019; Last updated: Feb. 28, 2025</small></p>
-					</div>
 				</div>
-			</footer>
+			</div>
+		</footer>
 
-		</div><!-- /.container -->
-		
-		{% include scripts.html %}
+	</div><!-- /.container -->
 
-　　</body>
+	{% include scripts.html %}
 
-　　</html>
+	　　
+</body>
+
+　　
+
+</html>
